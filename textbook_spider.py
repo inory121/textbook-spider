@@ -83,7 +83,6 @@ class MyWindow(QWidget):
         self.end_page = self.ui.end_page
         self.book_id = self.ui.book_id
         self.result_show = self.ui.result_show
-
         start_btn = self.ui.start_btn
         stop_btn = self.ui.stop_btn
         start_btn.clicked.connect(self.start_download)
@@ -109,5 +108,3 @@ if __name__ == "__main__":
     w = MyWindow()
     w.ui.show()
     app.exec_()
-    # download_img(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
-    # download_img(1, 152, 1312001202131)
